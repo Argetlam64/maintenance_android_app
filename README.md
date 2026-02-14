@@ -1,4 +1,5 @@
-# StoreMaintenance
+# Maintenance App
+# Projekt za predmet UPORA
 
 **Avtor:** Maj Verhovnik Marovšek
 
