@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/margin_large"
+    android:background="?attr/colorSurface">
+
+    <ImageButton
+        android:id="@+id/taskInfoBackButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/back_arrow"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        app:tint="?attr/colorPrimary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/dateIcon"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:src="@drawable/calendar"
+        app:tint="?attr/colorOnSurfaceVariant"
+        app:layout_constraintEnd_toStartOf="@id/taskInfoDateAdded"
+        app:layout_constraintBaseline_toBaselineOf="@id/taskInfoDateAdded" />
+
+    <TextView
+        android:id="@+id/taskInfoDateAdded"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12.1.2025"
+        android:textSize="@dimen/text_small"
+        android:textColor="?attr/colorOnSurfaceVariant"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/taskInfoTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_large"
+        android:text="Replace air filter"
+        android:textSize="@dimen/text_large"
+        android:textStyle="bold"
+        android:textColor="?attr/colorOnSurface"
+        app:layout_constraintTop_toBottomOf="@id/taskInfoBackButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/taskInfoStatus" />
+
+    <TextView
+        android:id="@+id/taskInfoStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/not_done"
+        android:paddingHorizontal="@dimen/padding_medium"
+        android:paddingVertical="@dimen/padding_small"
+        android:textColor="?attr/colorOnPrimary"
+        android:textSize="@dimen/text_small"
+        app:layout_constraintBaseline_toBaselineOf="@id/taskInfoTitle"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/storeIcon"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:src="@drawable/store"
+        app:tint="?attr/colorOnSurfaceVariant"
+        app:layout_constraintTop_toBottomOf="@id/taskInfoTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/margin_medium" />
+
+    <TextView
+        android:id="@+id/storeName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_small"
+        android:text="Store · Warehouse"
+        android:textColor="?attr/colorOnSurfaceVariant"
+        android:textSize="@dimen/text_medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/storeIcon"
+        app:layout_constraintTop_toTopOf="@+id/storeIcon" />
+
+    <ImageView
+        android:id="@+id/buildingIcon"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:src="@drawable/location"
+        app:tint="?attr/colorOnSurfaceVariant"
+        app:layout_constraintTop_toBottomOf="@id/storeIcon"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/margin_small" />
+
+    <TextView
+        android:id="@+id/buildingAddress"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_small"
+        android:text="Main building · Street 12"
+        android:textColor="?attr/colorOnSurfaceVariant"
+        android:textSize="@dimen/text_small"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buildingIcon"
+        app:layout_constraintTop_toTopOf="@+id/buildingIcon" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/detailsCard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_large"
+        app:cardBackgroundColor="?attr/colorSurfaceContainerLow"
+        app:cardElevation="@dimen/elevation_small"
+        app:layout_constraintTop_toBottomOf="@id/buildingAddress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_medium">
+
+            <TextView
+                android:id="@+id/taskInfoDetails"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Replace the air filter in the storage ventilation unit."
+                android:textSize="@dimen/text_medium"
+                android:textColor="?attr/colorOnSurface"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <ImageView
+                android:id="@+id/deadlineIcon"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/flag"
+                app:tint="?attr/colorOnSurfaceVariant"
+                app:layout_constraintTop_toBottomOf="@id/taskInfoDetails"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="@dimen/margin_medium" />
+
+            <TextView
+                android:id="@+id/taskInfoDeadline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_small"
+                android:text="Deadline: 12.1.2026"
+                android:textColor="?attr/colorOnSurfaceVariant"
+                android:textSize="@dimen/text_small"
+                app:layout_constraintStart_toEndOf="@id/deadlineIcon"
+                app:layout_constraintTop_toTopOf="@+id/deadlineIcon" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <ImageButton
+        android:id="@+id/taskDeleteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_medium"
+        android:layout_marginBottom="@dimen/margin_medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/delete" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

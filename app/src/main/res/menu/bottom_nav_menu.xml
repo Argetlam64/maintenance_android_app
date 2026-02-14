@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/techniciansListFragment"
+        android:icon="@drawable/person"
+        android:title="@string/menu_item_technicians" />
+
+    <item
+        android:id="@+id/buildingsFragment"
+        android:icon="@drawable/building"
+        android:title="@string/menu_item_building" />
+
+    <item
+        android:id="@+id/tasksListFragment"
+        android:icon="@drawable/tasks"
+        android:title="@string/menu_item_tasks" />
+
+    <item
+        android:id="@+id/technicianInfoFragment"
+        android:icon="@drawable/info"
+        android:title="@string/menu_item_user" />
+</menu>

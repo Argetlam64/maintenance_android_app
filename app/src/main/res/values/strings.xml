@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">Primming</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="main_activity_title">Primming App</string>
+    <string name="technician_info_car_string">Car: </string>
+    <string name="technician_info_car_kilometers">Kilometers: </string>
+    <string name="technician_info_car_licence_plate">Licence plate: </string>
+    <string name="technician_info_no_car_string">No car provided</string>
+    <string name="technician_info_no_car_kilometers">No car provided</string>
+    <string name="technician_info_car_title">Car</string>
+    <string name="technician_info_building_count">buildings assigned</string>
+    <string name="technician_row_name">Name</string>
+    <string name="menu_item_user">User</string>
+    <string name="menu_item_building">Buildings</string>
+    <string name="menu_item_tasks">Tasks</string>
+    <string name="menu_item_technicians">Technicians</string>
+    <string name="building_image">Building image</string>
+    <string name="button_back">Back</string>
+    <string name="building_info_materials">Materials</string>
+    <string name="building_info_stores">Stores</string>
+    <string name="settings_title">Settings</string>
+    <string name="settings_dark_mode_text">Dark Mode: </string>
+    <string name="settings_language_text">Language: </string>
+    <string name="task_info_date_added">Date Added: </string>
+    <string name="task_info_deadline">Deadline: </string>
+    <string name="task_info_no_deadline">No deadline</string>
+    <string name="task_info_done">Done</string>
+    <string name="task_info_not_done">Not done</string>
+    <string name="task_edit_title">Task title: </string>
+    <string name="task_edit_description">Task description: </string>
+    <string name="task_edit_deadline">Task deadline(optional): </string>
+    <string name="task_edit_deadline_hint">Task deadline</string>
+    <string name="task_edit_edit">Edit task</string>
+    <string name="task_edit_add">Add task</string>
+    <string name="task_edit_textedit_title">Title</string>
+    <string name="task_edit_textedit_description">Description</string>
+    <string name="task_edit_no_deadline">No deadline set</string>
+    <string name="task_edit_set_deadline">Set Deadline</string>
+    <string name="task_edit_remove_deadline">Remove</string>
+    <string name="material_row_no_manufacturer">No manufacturer inputted</string>
+    <string name="loading_text">Loading...</string>
+    <string name="loading_offline">Demo mode</string>
+    <string name="loading_online">Online</string>
+
+    <string name="buildings_list_view_text">List view</string>
+    <string name="buildings_map_view_text">Map view</string>
+    <string name="maps_open_tasks">open tasks</string>
+
+    <string name="technician_image">Technician image</string>
+
+    <string name="delete_task_popup_title">This will delete the current task</string>
+    <string name="delete_task_popup_description">This can not be undone</string>
+    <string name="delete_task_failed">Failed to delete the task</string>
+    <string name="yes">Yes</string>
+    <string name="cancel">Cancel</string>
+    <string name="no">No</string>
+
+
+</resources>

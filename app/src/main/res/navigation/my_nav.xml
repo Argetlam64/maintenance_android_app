@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/buildingsFragment">
+
+    <action
+        android:id="@+id/action_global_taskInfoFragment"
+        app:destination="@id/taskInfoFragment" />
+    <action
+        android:id="@+id/action_global_editTaskFragment"
+        app:destination="@id/editTaskFragment" />
+    <action
+        android:id="@+id/action_global_materialListFragment"
+        app:destination="@id/materialListFragment" />
+    <action
+        android:id="@+id/action_global_buildingInfoFragment"
+        app:destination="@id/buildingInfoFragment" />
+
+
+    <fragment
+        android:id="@+id/tasksListFragment"
+        android:name="projects.cooking.vzdrevanje_app.TasksListFragment"
+        android:label="fragment_tasks_list"
+        tools:layout="@layout/fragment_tasks_list" >
+        <action
+            android:id="@+id/action_tasksListFragment_to_taskInfoFragment"
+            app:destination="@id/taskInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/techniciansListFragment"
+        android:name="projects.cooking.vzdrevanje_app.TechniciansListFragment"
+        android:label="fragment_technicians_list"
+        tools:layout="@layout/fragment_technicians_list" />
+    <fragment
+        android:id="@+id/technicianInfoFragment"
+        android:name="projects.cooking.vzdrevanje_app.TechnicianInfoFragment"
+        android:label="fragment_technician_info"
+        tools:layout="@layout/fragment_technician_info" />
+    <fragment
+        android:id="@+id/buildingsListFragment"
+        android:name="projects.cooking.vzdrevanje_app.BuildingsListFragment"
+        android:label="fragment_buildings_list"
+        tools:layout="@layout/fragment_buildings_list" >
+        <action
+            android:id="@+id/action_buildingsListFragment_to_buildingInfoFragment"
+            app:destination="@id/buildingInfoFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/taskInfoFragment"
+        android:name="projects.cooking.vzdrevanje_app.TaskInfoFragment"
+        android:label="fragment_task_info"
+        tools:layout="@layout/fragment_task_info" >
+        <action
+            android:id="@+id/action_taskInfoFragment_to_tasksListFragment"
+            app:destination="@id/tasksListFragment" />
+        <action
+            android:id="@+id/action_taskInfoFragment_to_taskEditFragment"
+            app:destination="@id/taskEditFragment" />
+        <argument
+            android:name="taskId"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/taskEditFragment"
+        android:name="projects.cooking.vzdrevanje_app.taskEditFragment"
+        android:label="fragment_task_edit"
+        tools:layout="@layout/fragment_task_edit" >
+        <action
+            android:id="@+id/action_taskEditFragment_to_taskInfoFragment"
+            app:destination="@id/taskInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/buildingInfoFragment"
+        android:name="projects.cooking.vzdrevanje_app.BuildingInfoFragment"
+        android:label="fragment_building_info"
+        tools:layout="@layout/fragment_building_info" >
+        <action
+            android:id="@+id/action_buildingInfoFragment_to_buildingsListFragment"
+            app:destination="@id/buildingsListFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
+        <argument android:name="building_uuid" />
+        <action
+            android:id="@+id/action_buildingInfoFragment_to_storeInfoFragment"
+            app:destination="@id/storeInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/storeInfoFragment"
+        android:name="projects.cooking.vzdrevanje_app.StoreInfoFragment"
+        android:label="fragment_store_info"
+        tools:layout="@layout/fragment_store_info" >
+        <action
+            android:id="@+id/action_storeInfoFragment_to_buildingInfoFragment"
+            app:destination="@id/buildingInfoFragment" />
+        <argument
+            android:name="storeId"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/editTaskFragment"
+        android:name="projects.cooking.vzdrevanje_app.EditTaskFragment"
+        android:label="fragment_edit_task"
+        tools:layout="@layout/fragment_edit_task" />
+    <fragment
+        android:id="@+id/materialListFragment"
+        android:name="projects.cooking.vzdrevanje_app.MaterialListFragment"
+        android:label="fragment_material_list"
+        tools:layout="@layout/fragment_material_list" />
+    <fragment
+        android:id="@+id/buildingsFragment"
+        android:name="projects.cooking.vzdrevanje_app.BuildingsFragment"
+        android:label="fragment_buildings"
+        tools:layout="@layout/fragment_buildings" />
+    <fragment
+        android:id="@+id/mapsFragment"
+        android:name="projects.cooking.vzdrevanje_app.MapsFragment"
+        android:label="fragment_maps"
+        tools:layout="@layout/fragment_maps" />
+</navigation>

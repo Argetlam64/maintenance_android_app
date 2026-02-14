@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/margin_small"
+    android:layout_marginVertical="@dimen/margin_tiny"
+    app:cardCornerRadius="@dimen/corner_radius_medium"
+    app:cardElevation="@dimen/elevation_small"
+    app:cardBackgroundColor="?attr/colorSurfaceContainerLow">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_medium">
+
+        <!-- Icon -->
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/materialIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/material"
+            android:background="?attr/colorSurfaceVariant"
+            android:padding="8dp"
+            app:tint="?attr/colorOnSurfaceVariant"
+            app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Small"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Material name -->
+        <TextView
+            android:id="@+id/materialName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Material name"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_medium"
+            android:textColor="?attr/colorOnSurface"
+            app:layout_constraintStart_toEndOf="@id/materialIcon"
+            app:layout_constraintEnd_toStartOf="@id/materialCount"
+            app:layout_constraintTop_toTopOf="@id/materialIcon"
+            android:layout_marginStart="@dimen/margin_medium" />
+
+        <!-- Count (primary signal) -->
+        <TextView
+            android:id="@+id/materialCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12"
+            android:textSize="@dimen/text_large"
+            android:textStyle="bold"
+            android:textColor="?attr/colorPrimary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/materialName" />
+
+        <!-- Manufacturer -->
+        <TextView
+            android:id="@+id/materialManufacturer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_tiny"
+            android:text="Manufacturer"
+            android:textSize="@dimen/text_small"
+            android:textColor="?attr/colorOnSurfaceVariant"
+            app:layout_constraintStart_toStartOf="@id/materialName"
+            app:layout_constraintTop_toBottomOf="@id/materialName"
+            app:layout_constraintEnd_toEndOf="@id/materialName" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

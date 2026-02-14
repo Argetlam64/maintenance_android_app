@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorSurface"
+    tools:context=".SettingsFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/topGuideLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.06" />
+
+
+    <ImageButton
+        android:id="@+id/settingsBackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_medium"
+        android:src="@drawable/back_arrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/topGuideLine"
+        app:tint="?attr/colorPrimary"
+        android:background="?attr/selectableItemBackgroundBorderless"/>
+
+    <TextView
+        android:id="@+id/settingsDarkModeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_large"
+        android:text="@string/settings_dark_mode_text"
+        android:textColor="?attr/colorOnSurface"
+        android:textSize="@dimen/text_large"
+        app:layout_constraintStart_toStartOf="@+id/settingsBackButton"
+        app:layout_constraintTop_toBottomOf="@+id/settingsBackButton" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_large"
+        android:text="@string/settings_language_text"
+        android:textColor="?attr/colorOnSurface"
+        android:textSize="@dimen/text_large"
+        app:layout_constraintStart_toStartOf="@+id/settingsDarkModeText"
+        app:layout_constraintTop_toBottomOf="@+id/settingsDarkModeText" />
+
+    <com.google.android.material.materialswitch.MaterialSwitch
+        android:id="@+id/settingsDarkModeSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_large"
+        android:textColor="?attr/colorOnPrimary"
+        app:layout_constraintBaseline_toBaselineOf="@id/settingsDarkModeText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:thumbTint="?attr/colorOnPrimary"
+        app:trackTint="?attr/colorPrimaryContainer" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="?attr/colorSurfaceVariant"
+        android:popupBackground="?attr/colorSurfaceContainer"
+
+        app:layout_constraintBottom_toBottomOf="@id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/guideline"
+        app:layout_constraintTop_toTopOf="@id/textView" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/settings_title"
+        android:textColor="?attr/colorOnSurface"
+        android:textSize="@dimen/text_huge"
+        app:layout_constraintBottom_toBottomOf="@+id/settingsBackButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/settingsBackButton" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Vzdrževanje</string>
+    <string name="hello_blank_fragment">Pozdravljen prazen fragment</string>
+    <string name="main_activity_title">Primming Aplikacija</string>
+
+    <string name="technician_info_car_string">Vozilo:</string>
+    <string name="technician_info_car_kilometers">Kilometri:</string>
+    <string name="technician_info_car_licence_plate">Registrska oznaka:</string>
+    <string name="technician_info_no_car_string">Vozilo ni dodeljeno</string>
+    <string name="technician_info_no_car_kilometers">Podatek o kilometrih ni na voljo</string>
+    <string name="technician_info_car_title">Vozilo</string>
+
+    <string name="technician_info_building_count">stavb za vzdrževanje</string>
+    <string name="technician_row_name">Ime</string>
+
+    <string name="menu_item_user">Uporabnik</string>
+    <string name="menu_item_building">Objekti</string>
+    <string name="menu_item_tasks">Naloge</string>
+    <string name="menu_item_technicians">Tehniki</string>
+
+    <string name="building_image">Slika objekta</string>
+    <string name="button_back">Nazaj</string>
+    <string name="building_info_materials">Materiali</string>
+    <string name="building_info_stores">Trgovine</string>
+    <string name="settings_title">Nastavitve</string>
+    <string name="settings_dark_mode_text">Temni način</string>
+    <string name="settings_language_text">Jezik</string>
+    <string name="task_info_date_added">"Datum dodajanja: "</string>
+    <string name="task_info_deadline">"Rok končanja: "</string>
+    <string name="task_info_not_done">Neopravljeno</string>
+    <string name="task_edit_title">"Naslov naloge: "</string>
+    <string name="task_edit_description">"Opis naloge: "</string>
+    <string name="task_edit_deadline">"Rok naloge(opcijsko): "</string>
+    <string name="task_edit_deadline_hint">Rok naloge</string>
+    <string name="task_edit_edit">Spremeni nalogo</string>
+    <string name="task_edit_add">Dodaj nalogo</string>
+    <string name="task_edit_textedit_title">Naslov</string>
+    <string name="task_edit_textedit_description">Opis</string>
+    <string name="task_info_no_deadline">Ni roka</string>
+    <string name="task_info_done">Končano</string>
+    <string name="task_edit_no_deadline">Rok ni določen</string>
+    <string name="task_edit_set_deadline">Določi rok</string>
+    <string name="task_edit_remove_deadline">Odstrani</string>
+    <string name="material_row_no_manufacturer">Ni dodanega proizvajalca</string>
+    <string name="buildings_map_view_text">Zemljevid</string>
+    <string name="maps_open_tasks">nekončanih nalog</string>
+    <string name="technician_image">Slika tehnika</string>
+    <string name="loading_text">Nalaganje...</string>
+    <string name="loading_online">Z povezavo</string>
+    <string name="buildings_list_view_text">Seznam</string>
+    <string name="loading_offline">Demonstracija</string>
+    <string name="delete_task_popup_title">To bo izbrisalo trenutno nalogo</string>
+    <string name="delete_task_popup_description">To je nemogoče spremeniti kasneje</string>
+    <string name="delete_task_failed">Ni bilo mogoče zbrisati naloge</string>
+    <string name="yes">Da</string>
+    <string name="cancel">Prekliči</string>
+    <string name="no">Ne</string>
+</resources>
